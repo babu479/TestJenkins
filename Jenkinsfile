@@ -59,3 +59,4 @@ def pushToImage(blueContainerName, tag, dockerUser, dockerPassword){
     
     echo "Image push complete"
 	}
+}
