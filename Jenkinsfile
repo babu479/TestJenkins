@@ -34,7 +34,7 @@ stage('Image Build'){
             pushToImage(BLUE_CONTAINER_NAME, CONTAINER_TAG, USERNAME, PASSWORD)
         }
     }
-
+}
  def imagePrune(blueContainerName){
     try {
         sh """
@@ -59,4 +59,4 @@ def pushToImage(blueContainerName, tag, dockerUser, dockerPassword){
     
     echo "Image push complete"
 	}
-}
+
